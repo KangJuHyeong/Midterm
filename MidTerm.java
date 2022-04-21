@@ -84,8 +84,10 @@ public class MidTerm {
 				
 				for(int j=0;j<b.size();j++) {
 					Keyword kwrd=b.get(j);	
-					String s=kwrd.getString();
-					int n=kwrd.getCnt();
+					
+					
+					String s=kwrd.getString(); //body data
+					int n=kwrd.getCnt(); //bodty num
 					
 					Iterator<String> itr = map.keySet().iterator();
 				      while (itr.hasNext()) {
@@ -93,7 +95,7 @@ public class MidTerm {
 				         int num=(Integer)map.get(key);
 				         
 				         if(key.equals(s)) {
-				        	 
+				        	 System.out.println(key+","+bodyData);
 				         }
 				         
 				      }
@@ -101,21 +103,12 @@ public class MidTerm {
 				
 
 				}//body 
-				
-
-				
-				Iterator<String> itr = map.keySet().iterator();
-			      while (itr.hasNext()) {
-			         String key = itr.next();
-			         int num=(Integer)map.get(key);
-			         System.out.println(key+num);
-			      }
+							
 				
 			}
 	      
 	      
-	      
-	     
+	
 	      
 	      
 	      
